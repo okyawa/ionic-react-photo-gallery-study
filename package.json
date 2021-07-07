@@ -45,8 +45,11 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "ionic serve",
+    "build": "ionic build",
+    "ios": "ionic cap open ios",
+    "android": "ionic cap open android",
+    "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -69,7 +72,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.0.2"
+    "@capacitor/cli": "3.0.2",
+    "@ionic/cli": "^6.16.3"
   },
   "description": "An Ionic project"
 }
